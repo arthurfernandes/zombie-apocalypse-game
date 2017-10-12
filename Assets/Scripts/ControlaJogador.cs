@@ -14,6 +14,7 @@ public class ControlaJogador : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//Inputs do Jogador
 		float eixoX = Input.GetAxis ("Horizontal");
 		float eixoZ = Input.GetAxis ("Vertical");
 
@@ -27,6 +28,7 @@ public class ControlaJogador : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
+		//Movimentacao do Jogador
 		GetComponent<Rigidbody> ().MovePosition (
 			GetComponent<Rigidbody> ().position +
 			(direcao * Velocidade * Time.deltaTime));

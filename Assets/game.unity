@@ -312,6 +312,11 @@ Prefab:
       propertyPath: m_Name
       value: Zumbi (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114805465006536456, guid: 35861510587b7489780fe86970823679,
+        type: 2}
+      propertyPath: Jogador
+      value: 
+      objectReference: {fileID: 1149543320}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35861510587b7489780fe86970823679, type: 2}
   m_IsPrefabParent: 0
@@ -362,6 +367,11 @@ Prefab:
       propertyPath: m_Name
       value: Zumbi (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114805465006536456, guid: 35861510587b7489780fe86970823679,
+        type: 2}
+      propertyPath: Jogador
+      value: 
+      objectReference: {fileID: 1149543320}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35861510587b7489780fe86970823679, type: 2}
   m_IsPrefabParent: 0
@@ -370,21 +380,24 @@ GameObject:
   m_PrefabParentObject: {fileID: 1884102019447498, guid: 4b3bb44effa49480d8d18049684cc33a,
     type: 2}
   m_PrefabInternal: {fileID: 1491837405}
---- !u!54 &1149543324
-Rigidbody:
+--- !u!4 &1149543325 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1491837405}
+--- !u!114 &1149543326
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1149543320}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 116
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a396da565e624497282fd620fdce461b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bala: {fileID: 1746031599362096, guid: fceb006f7765c45719f463f2bda847b1, type: 2}
+  CanoDaArma: {fileID: 2065201970}
 --- !u!1 &1460341697
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +510,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4941635705825534, guid: 35861510587b7489780fe86970823679, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -11.5
+      value: -12.26
       objectReference: {fileID: 0}
     - target: {fileID: 4941635705825534, guid: 35861510587b7489780fe86970823679, type: 2}
       propertyPath: m_LocalPosition.y
@@ -505,7 +518,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4941635705825534, guid: 35861510587b7489780fe86970823679, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -17.33
+      value: -17.72
       objectReference: {fileID: 0}
     - target: {fileID: 4941635705825534, guid: 35861510587b7489780fe86970823679, type: 2}
       propertyPath: m_LocalRotation.x
@@ -527,6 +540,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114805465006536456, guid: 35861510587b7489780fe86970823679,
+        type: 2}
+      propertyPath: Jogador
+      value: 
+      objectReference: {fileID: 1149543320}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35861510587b7489780fe86970823679, type: 2}
   m_IsPrefabParent: 0
@@ -568,6 +586,22 @@ Prefab:
     - target: {fileID: 4610746654156704, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1884102019447498, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+      propertyPath: m_Name
+      value: Jogador
+      objectReference: {fileID: 0}
+    - target: {fileID: 4789171435226948, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188126387179866, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4925541059680036, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b3bb44effa49480d8d18049684cc33a, type: 2}
@@ -698,3 +732,31 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2637661593c9c4682bd299ee0ed79a06, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2065201970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2065201971}
+  m_Layer: 0
+  m_Name: CanoDaArma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2065201971
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065201970}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.044, y: 2.403, z: 2.576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1149543325}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
