@@ -1,8 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ControlaJogador.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ControlaInimigo.cs">
     <Files>
-      <File FileName="Assets/ControlaJogador.cs" Line="24" Column="1" />
+      <File FileName="Assets/Scripts/ControlaCamera.cs" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/ControlaJogador.cs" Line="64" Column="10" />
+      <File FileName="Assets/Scripts/ControlaInimigo.cs" Line="11" Column="28" />
+      <File FileName="Assets/Scripts/ControlaArma.cs" Line="17" Column="85" />
+      <File FileName="Assets/Scripts/ControlaBala.cs" Line="17" Column="10" />
+      <File FileName="Assets/Scripts/GeradorDeZumbis.cs" Line="20" Column="62" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
