@@ -7,11 +7,17 @@ public class ControlaInimigo : MonoBehaviour {
 	public GameObject Jogador;
 	public float Velocidade = 4;
 
+	private Rigidbody rigidBody;
+	private Animator animator;
+
 	// Use this for initialization
 	void Start () {
 		Jogador = GameObject.FindWithTag("Jogador");
 		int geraTipoZumbi = Random.Range (1, 28);
 		transform.GetChild (geraTipoZumbi).gameObject.SetActive (true);
+
+		rigidBody = GetComponent<Rigidbody> ();
+		animator = GetComponent<Animator> ();
 	}
 	
 	// Update is called once per frame
@@ -24,15 +30,15 @@ public class ControlaInimigo : MonoBehaviour {
 
 		if (distancia > 2.5) {
 			//Perseguir o Jogador
-			GetComponent<Rigidbody> ().MovePosition (
-				GetComponent<Rigidbody> ().transform.position +
+			rigidBody.MovePosition (
+				rigidBody.transform.position +
 				direcao.normalized * Velocidade * Time.deltaTime);
 
-			GetComponent<Animator> ().SetBool ("Atacando", false);
+			animator.SetBool ("Atacando", false);
 
 		} else {
 			//Atacar
-			GetComponent<Animator> ().SetBool ("Atacando", true);
+			animator.SetBool ("Atacando", true);
 		}
 	}
 
