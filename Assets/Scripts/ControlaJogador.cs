@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControlaJogador : MonoBehaviour {
 
 	public float Velocidade = 10;
+	public LayerMask MascaraChao;
 	Vector3 direcao;
 
 	// Use this for initialization
@@ -32,6 +33,20 @@ public class ControlaJogador : MonoBehaviour {
 		GetComponent<Rigidbody> ().MovePosition (
 			GetComponent<Rigidbody> ().position +
 			(direcao * Velocidade * Time.deltaTime));
+
+		//Rotaciona Jogador
+		Ray raio = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+		RaycastHit impacto;
+
+		if (Physics.Raycast (raio, out impacto, 100)) {
+			Vector3 posicaoMiraJogador = impacto.point - transform.position;
+			posicaoMiraJogador.y = transform.position.y;
+			Quaternion novaRotacao = Quaternion.LookRotation (posicaoMiraJogador);
+
+			GetComponent<Rigidbody> ().MoveRotation (novaRotacao);
+		
+		}
 	}
 		
 }

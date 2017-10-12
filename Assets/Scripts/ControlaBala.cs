@@ -13,6 +13,15 @@ public class ControlaBala : MonoBehaviour {
 	void FixedUpdate () {
 		GetComponent<Rigidbody> ().MovePosition (
 			GetComponent<Rigidbody> ().position +
-			Vector3.forward * Velocidade * Time.deltaTime);
+			transform.forward * Velocidade * Time.deltaTime);
+	}
+
+	void OnTriggerEnter (Collider objetoDeColisao)
+	{
+		if (objetoDeColisao.tag == "Inimigo") {
+			Destroy (objetoDeColisao.gameObject);
+		}
+
+		Destroy (gameObject);
 	}
 }

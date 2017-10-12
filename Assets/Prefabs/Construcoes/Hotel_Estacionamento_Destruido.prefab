@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65477383290451212}
   - component: {fileID: 135367710765484548}
   - component: {fileID: 135680471520264660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hotel_Estacionamento_Destruido
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,8 +105,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3.5265846
-  m_Center: {x: -37.2, y: -0.9371462, z: -25.8}
+  m_Radius: 2.4710693
+  m_Center: {x: -36.904625, y: -1.6973047, z: -25.27}
 --- !u!135 &135680471520264660
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -117,5 +117,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.9150085
-  m_Center: {x: -13.52, y: -0.50778556, z: -10.54}
+  m_Radius: 2.9418612
+  m_Center: {x: -13.1, y: -0.50778556, z: -10}
